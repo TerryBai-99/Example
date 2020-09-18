@@ -96,7 +96,7 @@ public class FirstFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_first, container, false);
     }
     public void abc(View v){
-        Log.i(tag,msg);
+        Log.i(tag,msg);//gyfyey
     }
     EditText edit=(EditText)findViewById(R.id.edit_text);
     String inputText=edit.getText().toString();
