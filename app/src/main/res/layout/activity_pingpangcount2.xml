@@ -8,7 +8,7 @@
 
     android:layout_height="match_parent"
 
-    tools:context=".BasketballCourtCounterActivity">
+    tools:context=".pingpangcount2">
 
 
 
@@ -32,31 +32,20 @@
 
             android:layout_height="50dp">
 
-            <Button
-
-                android:layout_width="wrap_content"
-
-                android:layout_height="wrap_content"
-
-                android:textColor="@android:color/white"
-
-                android:text="返回"
-
-                android:onClick="backHome"/>
 
             <TextView
 
-                android:layout_width="wrap_content"
+                android:layout_width="400dp"
 
                 android:layout_height="wrap_content"
 
-                android:text="篮球比赛计分器"
-
+                android:text="CourtCount"
+                android:gravity="center"
                 android:layout_centerInParent="true"
 
                 android:textSize="24sp"
-
-                android:textColor="@android:color/holo_blue_dark"/>
+                android:background="#FF9800"
+                android:textColor="#0C0C10"/>
 
 
 
@@ -114,31 +103,31 @@
 
                         android:layout_height="wrap_content"
 
+                        android:layout_gravity="center"
+
+                        android:layout_marginTop="16dp"
+
                         android:text="0"
 
-                        android:layout_gravity="center"
-
-                        android:textSize="20sp"
-
-                        android:layout_marginTop="16dp"/>
+                        android:textSize="60dp" />
 
                     <Button
 
                         android:layout_width="100dp"
 
-                        android:layout_height="wrap_content"
+                        android:layout_height="50dp"
 
                         android:layout_gravity="center"
 
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="24dp"
 
+                        android:background="#FF9800"
+
+                        android:onClick="teamA_AddScore"
+
+                        android:tag="1"
                         android:text="1 分"
-
-                        android:textColor="@android:color/white"
-
-                        android:onClick="teamA_AddScore"
-
-                        android:tag="1"/>
+                        android:textColor="#0C0C10" />
 
                     <Button
 
@@ -148,15 +137,15 @@
 
                         android:layout_gravity="center"
 
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="8dp"
 
+                        android:background="#FF9800"
+
+                        android:onClick="teamA_AddScore"
+
+                        android:tag="2"
                         android:text="2 分"
-
-                        android:textColor="@android:color/white"
-
-                        android:onClick="teamA_AddScore"
-
-                        android:tag="2"/>
+                        android:textColor="#0C0C10" />
 
                     <Button
 
@@ -166,15 +155,16 @@
 
                         android:layout_gravity="center"
 
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="8dp"
+
+                        android:background="#FF9800"
+
+                        android:onClick="teamA_AddScore"
+
+                        android:tag="3"
 
                         android:text="3 分"
-
-                        android:textColor="@android:color/white"
-
-                        android:onClick="teamA_AddScore"
-
-                        android:tag="3"/>
+                        android:textColor="#0C0C10" />
 
                 </LinearLayout>
 
@@ -214,55 +204,55 @@
 
                     <TextView
 
+                        android:id="@+id/teamBScore"
+
                         android:layout_width="wrap_content"
 
                         android:layout_height="wrap_content"
 
-                        android:id="@+id/teamBScore"
+                        android:layout_gravity="center"
+
+                        android:layout_marginTop="16dp"
 
                         android:text="0"
 
-                        android:layout_gravity="center"
-
-                        android:textSize="20sp"
-
-                        android:layout_marginTop="16dp"/>
+                        android:textSize="60dp" />
 
                     <Button
 
                         android:layout_width="100dp"
 
-                        android:layout_height="wrap_content"
+                        android:layout_height="50dp"
 
                         android:layout_gravity="center"
 
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="24dp"
 
+                        android:background="#FF9800"
+
+                        android:onClick="teamB_AddScore"
+
+                        android:tag="1"
                         android:text="1 分"
-
-                        android:textColor="@android:color/white"
-
-                        android:onClick="teamB_AddScore"
-
-                        android:tag="1"/>
+                        android:textColor="#0C0C10" />
 
                     <Button
 
                         android:layout_width="100dp"
 
-                        android:layout_height="wrap_content"
+                        android:layout_height="50dp"
 
                         android:layout_gravity="center"
 
                         android:layout_marginTop="16dp"
 
+                        android:background="#FF9800"
+
+                        android:onClick="teamB_AddScore"
+
+                        android:tag="2"
                         android:text="2 分"
-
-                        android:textColor="@android:color/white"
-
-                        android:onClick="teamB_AddScore"
-
-                        android:tag="2"/>
+                        android:textColor="#0C0C10" />
 
                     <Button
 
@@ -272,37 +262,21 @@
 
                         android:layout_gravity="center"
 
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="8dp"
+
+                        android:background="#FF9800"
+
+                        android:onClick="teamB_AddScore"
+
+                        android:tag="3"
 
                         android:text="3 分"
-
-                        android:textColor="@android:color/white"
-
-                        android:onClick="teamB_AddScore"
-
-                        android:tag="3"/>
+                        android:textColor="#0C0C10" />
 
                 </LinearLayout>
 
             </LinearLayout>
 
-            <Button
-
-                android:layout_width="100dp"
-
-                android:layout_height="wrap_content"
-
-                android:layout_alignParentBottom="true"
-
-                android:layout_centerInParent="true"
-
-                android:layout_marginBottom="230dp"
-
-                android:text="结算"
-
-                android:textColor="@android:color/white"
-
-                android:onClick="over"/>
 
             <Button
 
@@ -314,13 +288,13 @@
 
                 android:layout_centerInParent="true"
 
-                android:layout_marginBottom="160dp"
+                android:layout_marginBottom="32dp"
 
+                android:background="#FF9800"
+
+                android:onClick="reset"
                 android:text="重置"
-
-                android:textColor="@android:color/white"
-
-                android:onClick="reset"/>
+                android:textColor="@android:color/white" />
 
         </RelativeLayout>
 
